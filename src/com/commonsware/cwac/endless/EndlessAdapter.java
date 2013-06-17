@@ -15,6 +15,8 @@
 
 package com.commonsware.cwac.endless;
 
+import java.util.concurrent.atomic.AtomicBoolean;
+
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.os.AsyncTask;
@@ -24,7 +26,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListAdapter;
-import java.util.concurrent.atomic.AtomicBoolean;
+
 import com.commonsware.cwac.adapter.AdapterWrapper;
 
 /**
@@ -126,6 +128,10 @@ abstract public class EndlessAdapter extends AdapterWrapper {
     setKeepOnAppending(false);
   }
 
+  public boolean getKeepOnAppending() {
+	    return keepOnAppending.get();
+	}
+  
   public void restartAppending() {
     setKeepOnAppending(true);
   }
