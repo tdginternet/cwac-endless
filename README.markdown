@@ -1,3 +1,9 @@
+# :rotating_light: WARNING
+
+**This repository is DEPRECATED and not maintaned anymore.**
+
+--- 
+
 CWAC EndlessAdapter: It Just Keeps Going and Going And...
 =========================================================
 
